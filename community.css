@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #36393f;
+    color: white;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.server-list {
+    background-color: #202225;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.server-icon {
+    background-color: lavender;
+    width: 40px;
+    height: 40px;
+    margin: 10Px 0;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+.channel-list {
+    background-color:gray;
+    width: 250px;
+    padding: 20px;
+}
+
+.channel-list h3 {
+    margin-top: 0;
+}
+
+.channel {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #393c43;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.channel:hover {
+    background-color: black;
+}
+
+.chat-section {
+    background-color: #36393f;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #2f3136;
+    padding: 15px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: #202225;
+}
+
+.chat-input {
+    background-color: #2f3136;
+    
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    background-color:black ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #5865f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-section {
+    background-color: gray;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.user-info p {
+    margin: 0;
+    color:darkslategray;
+}
+
+#logout-button {
+    background-color: #d83a3a;
+    border: none;
+    padding: 10px;
+    color: ;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black; /* Background color */
+    overflow: hidden; /* Hide scrollbars */
+    position: relative; /* For positioning stars */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 1) 100%);
+    animation: stars 50s linear infinite; /* Background animation */
+}
+
+@keyframes stars {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite alternate; /* Twinkle effect */
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Generate stars using JavaScript */
+.blog-container {
+    position: relative;
+    z-index: 1; /* Keep content above the background */
+    padding: 20px;
+    color: white; /* Text color */
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Other styles */
+/* Sidebar, header, and footer styles can remain unchanged */
+/* Add your existing styles for blog posts, sidebar, etc. */

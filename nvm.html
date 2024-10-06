@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Login Page</title>
+  <style>
+    /* Reset basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('sky.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    /* Add blur effect to background */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px); /* Blur the background */
+      z-index: -1;
+    }
+
+    /* Container for the 3D login box */
+    .login-container {
+      background: rgba(255, 255, 255, 0.2); /* Transparent white */
+      backdrop-filter: blur(5px); /* Blurred effect for the box */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      transform: perspective(1000px) rotateY(15deg); /* 3D tilt effect */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .login-container:hover {
+      transform: perspective(1000px) rotateY(0deg); /* Reset tilt on hover */
+    }
+
+    /* Form styling */
+    h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #04AA6D;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background-color: #039f61;
+    }
+
+    /* Optional: Style for links */
+    .links {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #04AA6D;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 3D login box container -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div class="links">
+      <a href="https://support.google.com/mail/answer/56256?hl=en">Forgot password?</a> |
+      <a href="http://127.0.0.1:3002/navotpattilogin2.html">Sign up later </a>
+    </div>
+  </div>
+
+  <script>
+    // Handle form submission and redirect to specified URL
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent form from actually submitting
+      window.location.href = 'http://127.0.0.1:3000/navotpattilogin2.html';  // Redirect to your page
+    });
+  </script>
+
+</body>
+</html>

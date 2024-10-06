@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f406;
+    background-image: url('https://th.bing.com/th/id/OIP.LVT6U5SdWaBkY5KZsigRLwHaEo?w=3840&h=2400&rs=1&pid=ImgDetMain'); /* Replace with your image URL */
+
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #35424a;
+}
+
+a:hover {
+    color: #e8491d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p2{
+    color: antiquewhite;
+}

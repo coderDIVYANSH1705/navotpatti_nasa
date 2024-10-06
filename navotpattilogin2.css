@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(sky.jpg)
+  }
+
+  /* Use Flexbox to center the h1 */
+  body {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height */
+    
+  }
+
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    color: #333;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  /* Glowing effect for h1 */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Outer glow */
+                 0 0 20px rgba(0, 191, 255, 0.8),    /* Light cyan glow */
+                 0 0 30px rgba(0, 191, 255, 0.8);    /* More intense glow */
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hover effect to intensify glow */
+  h1:hover {
+    color: #0ff; /* Optional: Change text color on hover */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), /* Stronger white glow */
+                 0 0 40px rgba(0, 191, 255, 1),   /* Stronger cyan glow */
+                 0 0 60px rgba(0, 191, 255, 1);   /* More intense */
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Style for body */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Taskbar container */
+  .navbar {
+    background-color: #333;  /* Dark background for taskbar */
+    overflow: hidden;
+    position: fixed;  /* Stick the taskbar at the top */
+    top: 0;
+    width: 100%;
+    z-index: 999;  /* Ensure taskbar is above other content */
+  }
+
+  /* Style for the taskbar items (links) */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;  /* White text color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Hover effect for the links */
+  .navbar a:hover {
+    background-color: black;  /* Lighter background on hover */
+    color: #fff;
+  }
+
+  /* Active link style */
+  .navbar a.active {
+    background-color:skyblue;  /* Highlight active option */
+    color: white;
+  }
+
+  /* Padding for content so it doesn't hide behind the fixed navbar */
+  .content {
+    padding-top: 50px; /* Taskbar height + some extra space */
+  }
+
+  /* Media query for mobile responsiveness */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none; /* Stack items vertically */
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+p{
+  color:whitesmoke;
+}
+ 
+
+  
+
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 3em;
+  color: #fff;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #ffcc33);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  
+}
+h2:hover {
+  color: #0ff; /* Optional: Change text color on hover */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1), /* Stronger white glow */
+               0 0 40px rgba(0, 191, 255, 1),   /* Stronger cyan glow */
+               0 0 60px rgba(0, 191, 255, 1);   /* More intense */
+  transform: scale(1.05); /* Slightly enlarge the text on hover */
+
+}
+

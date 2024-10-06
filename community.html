@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord-Like Interface</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar for servers -->
+        <div class="server-list">
+            <div class="server-icon">🏠</div>
+            <div class="server-icon">🎮</div>
+            <div class="server-icon">💻</div>
+            <div class="server-icon">📝</div>
+        </div>
+
+        <!-- Channel List -->
+        <div class="channel-list">
+            <h3>EXOVERSE</h3>
+            <div class="channel">GLOBAL</div>
+            <div class="channel">PRIVATE CHAT ROOM</div>
+            <div class="channel"> BLOG CHANNEL</div>
+        </div>
+
+        <!-- Main Chat Section -->
+        <div class="chat-section">
+            <div class="chat-header">
+                <h3>WELCOME ! TO THE EXOVERSE</h3>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Chat messages will go here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Message #general" />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+
+        <!-- User Section -->
+        <div class="user-section">
+            <div class="user-info">
+                <p>DISPLAY - USERNAME </p>
+                <p></p>
+            </div>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+</html>
